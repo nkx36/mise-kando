@@ -23,9 +23,9 @@ git init
 ### 1. Replace placeholders
 
 Search and replace these placeholders throughout the project:
-- `<TOOL>` → your tool name (e.g., `semver`)
-- `<GITHUB_USER>` → your GitHub username or organization
-- `<GITHUB_REPO>` → the upstream tool's GitHub repository name
+- `mise` → your tool name (e.g., `semver`)
+- `nkx36` → your GitHub username or organization
+- `mise-kando` → the upstream tool's GitHub repository name
 
 Files to update:
 - `metadata.lua` - Update name, description, author, updateUrl
@@ -124,7 +124,7 @@ This sets up automatic linting and formatting on git commits.
 
 1. Link your plugin for development:
 ```bash
-mise plugin link --force <TOOL> .
+mise plugin link --force mise .
 ```
 
 2. Run tests:
@@ -161,7 +161,7 @@ hk fix        # Run linters and auto-fix issues
 
 Enable debug output:
 ```bash
-MISE_DEBUG=1 mise install <TOOL>@latest
+MISE_DEBUG=1 mise install mise@latest
 ```
 
 ## Files
